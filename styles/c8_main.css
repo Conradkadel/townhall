@@ -9,7 +9,8 @@ html {
 body {
 	font-family: Arial, Helvetica, sans-serif;
     font-size: 100%;
-    width: 800px;
+    width: 98%;
+	max-width: 960px;
     margin: 0 auto;
     border: 3px solid #931420;
     background-color: #fffded;
@@ -40,7 +41,9 @@ header h3 {
 }
 header img {
 	float: left;
-	padding: 0 30px;
+	padding: 0 3.125%;
+	max-width: 40%;
+	min-width: 150px;
 }
 .shadow {
 	text-shadow: 2px 2px 2px #800000;
@@ -52,13 +55,16 @@ header img {
 	margin: 0;
 	padding: 0;
 	position: relative;
+	width: 100%;
+
 }
 #nav_menu ul li {
 	float: left;
+    width: 20%;
 }
 #nav_menu ul li a {
     display: block;
-    width: 160px;
+    width: 192px;
     text-align: center;
     padding: 1em 0;
     text-decoration: none;
@@ -88,9 +94,9 @@ header img {
 
 /* the styles for the section */
 section {
-	width: 525px;
+	width: 54.6875%;
 	float: right;
-	padding: 0 20px 20px 20px;
+	padding: 0 20px 2.08% 2.08%;
 }
 section h1 {
 	font-size: 150%;
@@ -138,7 +144,7 @@ article img {
 
 /* the styles for the aside */
 aside {
-	width: 215px;
+	width: 22.39%;
 	float: right;
 	padding: 0 0 20px 20px;
 }
@@ -167,3 +173,41 @@ footer p {
 	color: white;
 	padding: 1em 0;
 }
+
+@media only screen and (max-width: 700px) {
+   	aside h2 a {
+        size: 85%;
+        
+    }
+	section h1 {
+        size: 125%;
+        
+    }
+	aside h2, section h2 {
+        size: 110%;
+        
+    }
+}
+@media only screen and (max-width: 550px) {
+	header img {
+	 size: 85%;
+	 float: none;
+	width: 30%;
+	 
+ }
+ header {
+	 content: center;
+	 
+ }
+ section, aside {
+	float: none;
+	padding: 0px 0px 3.6% 3.6%;
+	width: 80%
+	
+}
+aside {
+	column-count: 2;
+	
+}
+
+ }
