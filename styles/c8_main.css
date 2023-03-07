@@ -194,7 +194,18 @@ footer p {
 	 float: none;
 	width: 30%;
 	 
- }
+ 	}
+ 	#nav_menu{
+		display:none;
+}
+#mobile_menu{
+	display:block;
+}
+.slicknav_menu{
+	background-color: #800000;
+}
+}
+
  header {
 	 content: center;
 	 
@@ -209,5 +220,8 @@ aside {
 	column-count: 2;
 	
 }
+#mobile_menu{
+	display: none;
+	
+}
 
- }
